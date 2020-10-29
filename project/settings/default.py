@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_ROOT_DIR = Path(__file__).resolve().parent.parent.parent
@@ -77,5 +78,5 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATIC_URL = Path.joinpath(STATIC_ROOT_DIR, 'static')
-STATIC_ROOT =  Path.joinpath(STATIC_ROOT_DIR, "static")
+STATIC_URL = os.path.join(STATIC_ROOT_DIR, 'static/')
+STATIC_ROOT =  os.path.join(STATIC_ROOT_DIR, "static/")
