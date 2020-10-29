@@ -77,5 +77,5 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATIC_URL = '/static/'
+STATIC_URL = Path.joinpath(BASE_DIR, '/static/')
 STATIC_ROOT =  Path.joinpath(BASE_DIR, "static")
